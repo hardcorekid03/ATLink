@@ -10,3 +10,24 @@
         this.className += " active";
         });
       }
+
+
+      // Add active class to the current button when scrolled to sections
+     
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section');
+        const navItems = document.querySelectorAll('.btn');
+      
+        sections.forEach((section, index) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.pageYOffset >= sectionTop - sectionHeight / 3 && window.pageYOffset < sectionTop + sectionHeight - sectionHeight / 3) {
+            navItems.forEach((navItem) => {
+              navItem.classList.remove('active');
+            });
+            navItems[index].classList.add('active');
+          }
+        });
+      });
+
+      

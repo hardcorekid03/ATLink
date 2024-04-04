@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
 // Get all the links with an ID starting with '#'
 const links = document.querySelectorAll("a[href^='#']");
