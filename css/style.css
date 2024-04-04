@@ -189,3 +189,6 @@ section {
     border-radius: 50%;
   }
 }
+.swiper-slide img{
+  width: 100%;
+}
