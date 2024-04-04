@@ -9,7 +9,7 @@ body {
   } 
 }
 @media screen and (max-width: 767px) {
-  .HomeSection, .GallerySection {
+  .HomeSection, .GallerySection .FooterSection{
     height: 100vh;
   } 
 }
