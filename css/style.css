@@ -36,24 +36,23 @@ section {
   justify-content: center;
   align-items: center;
 }
-.ServicesSection {
-  /* background: url(../images/nnnoise.svg) no-repeat center center/cover; */
-  background-repeat: no-repeat, repeat;
-  background-blend-mode: lighten;
+/* .ServicesSection {
+  background: url(../images/nnnoise.svg) no-repeat center center/cover;
+} */
+
+#GallerySection {
+
 }
+
 .nav-menu-container a:hover {
   font-weight: bold;
   cursor: pointer;
 }
 
 /* Style the active class, and buttons on mouse-over */
-.active {
+.nav-menu-container .active {
   font-weight: bold;
   border-bottom: 2px solid #0083b0;
-}
-
-.footer a:hover {
-  text-decoration: underline;
 }
 
 .services,
@@ -67,22 +66,9 @@ section {
   text-decoration: underline;
   font-weight: bold;
 }
-#nav-menu-container a:hover {
-  font-weight: bold;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-#Home {
-  /* background: url(images/bg-1.svg) center; */
-  background-size: cover;
-}
-
 .circles {
   position: absolute;
   top: 0;
@@ -185,7 +171,4 @@ section {
     opacity: 0;
     border-radius: 50%;
   }
-}
-.swiper-slide img{
-  width: 100%;
 }

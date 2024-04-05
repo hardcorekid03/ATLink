@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ATLink IT Services</title>
-    <!-- Tailwind CSS -->
+
+    <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <!-- Tailwind CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -15,12 +17,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
     />
-
     <!-- AOS CSS for transitions-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <link href="css/style.css" rel="stylesheet" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -318,106 +317,106 @@
       <div class="container px-4 mx-auto">
         <h2 class="text-3xl font-semibold text-center mb-8">Gallery</h2>
         <div class="container mx-auto">
-          <div id="gallery" class="relative w-full" data-carousel="slide">
-            <!-- Carousel wrapper -->
-            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-              <!-- Item 1 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="images/body/gallery1.jpg"
-                  class="absolute block object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt=""
-                />
-              </div>
-              <!-- Item 2 -->
-              <div
-                class="hidden duration-700 ease-in-out"
-                data-carousel-item="active"
+            <p class="text-gray-600" style="text-align: justify">
+              Here, we showcase a collection of images
+              that depict our IT services in action. From setting up networks to
+              troubleshooting hardware, our skilled staffs are dedicated to
+              providing top-notch solutions for all your technology needs.
+            </p> <br>
+          <br />
+          <!-- Component: Carousel with controls inside -->
+          <div class="relative w-full glide-01">
+            <!-- Slides -->
+            <div class="overflow-hidden" data-glide-el="track">
+              <ul
+                class="relative w-full overflow-hidden p-0 whitespace-no-wrap flex flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform]"
               >
-                <img
-                  src="images/body/gallery2.jpg"
-                  class="absolute block object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt=""
-                />
-              </div>
-              <!-- Item 3 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="images/body/gallery3.jpg"
-                  class="absolute block object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt=""
-                />
-              </div>
-              <!-- Item 4 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="images/body/gallery4.jpg"
-                  class="absolute block object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt=""
-                />
-              </div>
-              <!-- Item 5 -->
-              <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img
-                  src="images/body/gallery5.jpg"
-                  class="absolute block object-contain -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-                  alt=""
-                />
-              </div>
+                <li>
+                  <img
+                    src="images/body/gallery1.jpg"
+                    class="w-full max-w-full max-h-full m-auto"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/body/gallery2.jpg"
+                    class="w-full max-w-full max-h-full m-auto"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/body/gallery3.jpg"
+                    class="w-full max-w-full max-h-full m-auto"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/body/gallery4.jpg"
+                    class="w-full max-w-full max-h-full m-auto"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/body/gallery5.jpg"
+                    class="w-full max-w-full max-h-full m-auto"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="images/body/gallery6.jpg"
+                    class="w-full max-w-full max-h-full m-auto"
+                  />
+                </li>
+              </ul>
             </div>
-            <!-- Slider controls -->
-            <button
-              type="button"
-              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev
+            <!-- Controls -->
+            <div
+              class="absolute left-0 flex items-center justify-between w-full h-0 px-4 top-1/2"
+              data-glide-el="controls"
             >
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              <button
+                class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white"
+                data-glide-dir="<"
+                aria-label="prev slide"
               >
                 <svg
-                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 6 10"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
                 >
+                  <title>prev slide</title>
                   <path
-                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M5 1 1 5l4 4"
+                    d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
                   />
                 </svg>
-                <span class="sr-only">Previous</span>
-              </span>
-            </button>
-            <button
-              type="button"
-              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next
-            >
-              <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              </button>
+              <button
+                class="inline-flex items-center justify-center w-8 h-8 transition duration-300 border rounded-full lg:w-12 lg:h-12 text-slate-700 border-slate-700 hover:text-slate-900 hover:border-slate-900 focus-visible:outline-none bg-white"
+                data-glide-dir=">"
+                aria-label="next slide"
               >
                 <svg
-                  class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 6 10"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5"
                 >
+                  <title>next slide</title>
                   <path
-                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m1 9 4-4-4-4"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
                 </svg>
-                <span class="sr-only">Next</span>
-              </span>
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -543,6 +542,30 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+
+    <script>
+      var glide01 = new Glide(".glide-01", {
+        type: "carousel",
+        focusAt: "center",
+        perView: 3,
+        autoplay: 3000,
+        animationDuration: 700,
+        gap: 24,
+        classes: {
+          activeNav: "[&>*]:bg-slate-700",
+        },
+        breakpoints: {
+          1024: {
+            perView: 2,
+          },
+          640: {
+            perView: 1,
+          },
+        },
+      });
+      glide01.mount();
     </script>
   </body>
 </html>
