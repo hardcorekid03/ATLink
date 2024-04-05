@@ -5,17 +5,22 @@
 //   mobileMenu.classList.toggle("hidden");
 // });
 
-// Toggle mobile menu visibility
-document
-  .getElementById("mobile-menu-button")
-  .addEventListener("click", function () {
-    var mobileMenu = document.getElementById("mobile-menu");
-    if (mobileMenu.classList.contains("hidden")) {
-      mobileMenu.classList.remove("hidden");
-    } else {
-      mobileMenu.classList.add("hidden");
+document.addEventListener("DOMContentLoaded", function() {
+  var mobileMenuButton = document.getElementById('mobile-menu-button');
+  var mobileMenu = document.getElementById('mobile-menu');
+
+  // Toggle mobile menu visibility
+  mobileMenuButton.addEventListener('click', function() {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Close mobile menu when clicked outside of it
+  document.addEventListener('click', function(event) {
+    if (!mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+      mobileMenu.classList.add('hidden');
     }
   });
+});
 // Close mobile menu when a menu item is clicked
 var mobileMenuItems = document.querySelectorAll("#mobile-menu a");
 mobileMenuItems.forEach(function (item) {
