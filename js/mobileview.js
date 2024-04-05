@@ -23,3 +23,4 @@ mobileMenuItems.forEach(function (item) {
     document.getElementById("mobile-menu").classList.add("hidden");
   });
 });
+
