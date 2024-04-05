@@ -9,11 +9,7 @@ body {
   } 
 }
 @media screen and (max-width: 767px) {
-<<<<<<< HEAD
-  .HomeSection, .GallerySection, .FooterSection {
-=======
   .HomeSection, .GallerySection, .FooterSection{
->>>>>>> a060666cfbe58e0b1c162c937a7e09ccab79e249
     height: 100vh;
   } 
 }
