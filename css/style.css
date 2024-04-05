@@ -70,6 +70,7 @@ section {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 .circles {
   position: absolute;
   top: 0;
