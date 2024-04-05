@@ -41,9 +41,6 @@ section {
   background-repeat: no-repeat, repeat;
   background-blend-mode: lighten;
 }
-.servicesItems {
-}
-
 .nav-menu-container a:hover {
   font-weight: bold;
   cursor: pointer;
